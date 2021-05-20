@@ -32,31 +32,31 @@
                     <option value = "morethanten">More than ten times</option>
                 </select>
             </div>
-            <fieldset>
+            <fieldset class = "form">
                 <legend>Investment priorties</legend>
                 <label id = "stadium" for="stadium">Where should money be spent first on the stadium?</label>
-                    <input type="radio" name="stadium" value="seats" checked = "checked">Seats
-                    <input type="radio" name="stadium" value="roof">Roof
-                    <input type="radio" name="stadium" value="toilets">Toilets
-                    <input type="radio" name="stadium" value="concourse">Concourse
+                    <input class = "input" type="radio" name="stadium" value="seats" checked = "checked">Seats
+                    <input class = "input" type="radio" name="stadium" value="roof">Roof
+                    <input class = "input" type="radio" name="stadium" value="toilets">Toilets
+                    <input class = "input" type="radio" name="stadium" value="concourse">Concourse <br>
                 <label id = "team" for="team">What position do we need to strengthen first?</label> 
-                    <input type="radio" name="team" value="keeper" checked = "checked">Goalkeeper
-                    <input type="radio" name="team" value="defence">Defence
-                    <input type="radio" name="stadium" value="midfield">Midfield
-                    <input type="radio" name="stadium" value="attack">Attack
+                    <input class = "input" type="radio" name="team" value="keeper" checked = "checked">Goalkeeper
+                    <input class = "input" type="radio" name="team" value="defence">Defence
+                    <input class = "input" type="radio" name="team" value="midfield">Midfield
+                    <input class = "input" type="radio" name="team" value="attack">Attack
             </fieldset>
-            <div>
-                <label id = "managers" for="managers">Which of the following could take Manchester United to glory? (tick all that apply)</label>
+            <div class = "form">
+                <label id = "managers" for="managers">Which of the following could take Manchester United to glory? (tick all that apply)</label><br>
                     <input type = "checkbox" name = "managers" value = "BigSam" checked = "checked">Big Sam Allardyce
                     <input type = "checkbox" name = "managers" value = "Jose">Jose Mourinho
                     <input type = "checkbox" name = "managers" value = "Scott">Scott Parker
                     <input type = "checkbox" name = "managers" value = "BigRon">Ron Atkinson
             </div>
-            <div>
+            <div class = "form" id = "comments">
                 <p>Do you have any additional comments to add?</p>
-                    <textarea name = "comments">Enter your comments...</textarea>
+                <textarea id="textbox" name = "comments">Enter your comments...</textarea>
             </div>
-            <div>
+            <div class = "form">
                 <input type="submit" name="submit" id="submit" value = "Submit responses">
             </div>
          </form>
