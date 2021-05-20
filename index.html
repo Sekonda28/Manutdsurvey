@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+     <title>Manchester United Fan Survey</title>
+     <link rel="stylesheet" href="./Resources/css/styles.css">
+    </head>
+  <body>
+    <header>
+      <h1 id = "title">Manchester United Fan Survey</h1>
+      <p id = "description">Give us your views on how the club is run and what we need to change to improve the experience!</p>
+    </header>
+    <main>
+        <form id = "survey-form">
+            <div class = "form">
+                <label id = "name-label" for = "name">Name</label>
+                <input type="text" id = "name" name = "name" placeholder = "Enter your name" required>
+            </div>
+            <div class = "form">
+                <label id = "email-label" for = "email">Email</label>
+                <input type="email" id = "email" name = "email" placeholder = "Enter your Email address" required>
+            </div>
+            <div class = "form">
+                <label id = "number-label" for = "supportyear">What year did you start supporting Manchester United?</label>
+                <input type="number" id = "supportyear" name = "supportyear" min = "1920" max = "2021" placeholder="1990" required>
+            </div>
+            <div class = "form">
+                <label id = "dropdown" for = "visits">How many times do you usually visit Old Trafford per season?</label>
+                <select name ="visits">
+                    <option value = "never">Never</option>
+                    <option value = "once">Once or twice</option>
+                    <option value = "ten">Three to ten times</option>
+                    <option value = "morethanten">More than ten times</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Investment priorties</legend>
+                <label id = "stadium" for="stadium">Where should money be spent first on the stadium?</label>
+                    <input type="radio" name="stadium" value="seats" checked = "checked">Seats
+                    <input type="radio" name="stadium" value="roof">Roof
+                    <input type="radio" name="stadium" value="toilets">Toilets
+                    <input type="radio" name="stadium" value="concourse">Concourse
+                <label id = "team" for="team">What position do we need to strengthen first?</label> 
+                    <input type="radio" name="team" value="keeper" checked = "checked">Goalkeeper
+                    <input type="radio" name="team" value="defence">Defence
+                    <input type="radio" name="stadium" value="midfield">Midfield
+                    <input type="radio" name="stadium" value="attack">Attack
+            </fieldset>
+            <div>
+                <label id = "managers" for="managers">Which of the following could take Manchester United to glory? (tick all that apply)</label>
+                    <input type = "checkbox" name = "managers" value = "BigSam" checked = "checked">Big Sam Allardyce
+                    <input type = "checkbox" name = "managers" value = "Jose">Jose Mourinho
+                    <input type = "checkbox" name = "managers" value = "Scott">Scott Parker
+                    <input type = "checkbox" name = "managers" value = "BigRon">Ron Atkinson
+            </div>
+            <div>
+                <p>Do you have any additional comments to add?</p>
+                    <textarea name = "comments">Enter your comments...</textarea>
+            </div>
+            <div>
+                <input type="submit" name="submit" id="submit" value = "Submit responses">
+            </div>
+         </form>
+     </main>
+       </body>
+    </html>
